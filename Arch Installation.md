@@ -73,3 +73,20 @@ echo LANG=en_US.UTF-8 >> /etc/locale.conf
 echo LC_TIME=en_GB.UTF-8 >> /etc/locale.conf
 echo LC_MEASUREMENT=en_GB.UTF-8 >> /etc/locale.conf
 ```
+
+### Network configuration
+
+```bash
+echo arch > /etc/hostname
+systemctl enable NetworkManager
+```
+
+### Boot loader
+
+
+
+```bash
+grub-install --target=x86_64-efi --bootloader-id=GRUB --efi-directory=/boot --removable
+nvim /etc/default/grub
+grub-mkconfig -o /boot/grub/grub.cfg
+```
