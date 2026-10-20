@@ -16,6 +16,13 @@ fdisk -l
 fdisk /dev/sda
 ```
 
+### Format the partitions
+
+```bash
+mkfs.ext4 /dev/sda2
+mkfs.fat -F 32 /dev/sda1
+```
+
 ### Mount the file systems
 
 ```bash
