@@ -6,12 +6,12 @@
 sudo pacman -S linux-headers ddcci-driver-linux-dkms-git ddcutil brightnessctl
 ```
 
-### Replacethe outdated function
+### Replace the outdated function
 
-Open
+Open **/usr/src/ddcci-0.4.5/ddcci/ddcci.c**:
 
 ```bash
-sudo nvim /var/lib/dkms/ddcci/0.4.5/source/ddcci/ddcci.c
+sudo nvim /usr/src/ddcci-0.4.5/ddcci/ddcci.c
 ```
 
 ```bash
