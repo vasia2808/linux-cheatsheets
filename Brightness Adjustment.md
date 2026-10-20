@@ -34,10 +34,14 @@ Run **i2c-dev** module:
 modprobe i2c-dev
 ```
 
-Find **I2C bus** (for example: /dev/i2c-4):
+Find **I<sup>2</sup>C bus** (for example: /dev/i2c-4):
 
 ```bash
 ddcutil detect
 ```
 
-Find
+Find I<sup>2</sup>C bus adapter name:
+
+```bash
+
+```
