@@ -40,8 +40,14 @@ Find **I<sup>2</sup>C bus** (for example: /dev/i2c-4):
 ddcutil detect
 ```
 
-Find I<sup>2</sup>C bus adapter name:
+Find I<sup>2</sup>C bus adapter name for example: AMDGPU DM i2c hw bus 2):
 
 ```bash
+cat /sys/bus/i2c/devices/i2c-4/name
+```
 
+Create **90-ddcci.rules** file:
+
+```bash
+sudo nvim /etc/udev/rules.d/90-ddcci.rules
 ```
