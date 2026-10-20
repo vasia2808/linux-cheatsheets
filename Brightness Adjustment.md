@@ -34,8 +34,10 @@ Run **i2c-dev** module:
 modprobe i2c-dev
 ```
 
-Find I2C bus (for example: /dev/i2c-4):
+Find **I2C bus** (for example: /dev/i2c-4):
 
 ```bash
 ddcutil detect
 ```
+
+Find 
