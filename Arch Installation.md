@@ -51,3 +51,15 @@ hwclock --systohc
 ### Localization
 
 Uncomment:
+* en_GB.UTF-8 UTF-8
+* en_US.UTF-8 UTF-8
+* ru_RU.UTF-8 UTF-8
+* uk_UA.UTF-8 UTF-8
+
+```bash
+nvim /etc/locale.gen
+locale-gen
+echo LANG=en_US.UTF-8 >> /etc/locale.conf
+echo LC_TIME=en_GB.UTF-8 >> /etc/locale.conf
+echo LC_MEASUREMENT=en_GB.UTF-8 >> /etc/locale.conf
+```
