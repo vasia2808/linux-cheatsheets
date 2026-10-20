@@ -100,6 +100,8 @@ passwd
 
 ### User configuration
 
+Uncomment **%wheel ALL=(ALL:ALL) ALL**
+
 ```bash
 EDITOR=nvim visudo
 
