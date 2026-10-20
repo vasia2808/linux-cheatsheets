@@ -20,6 +20,9 @@ Replace **strncpy** with **strscpy**:
 :%s/strncpy/strscpy/g
 ```
 
+### Install the module
+
 ```bash
-sudo dkms install ddcci/0.4.5 -k 7.2.2-arch1-1
+sudo dkms install ddcci/0.4.5
 ```
+
