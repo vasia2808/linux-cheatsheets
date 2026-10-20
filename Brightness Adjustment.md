@@ -55,5 +55,5 @@ sudo nvim /etc/udev/rules.d/90-ddcci.rules
 Write udev rule:
 
 ```udev
-
+ACTION=="add", SUBSYSTEM=="i2c", ATTR{name}=="AMDGPU DM i2c hw bus 2", RUN+="/bin/sh -c 'echo ddcci 0x37 > /sys%p/new_device'"
 ```
