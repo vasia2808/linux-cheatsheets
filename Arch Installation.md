@@ -8,7 +8,7 @@ iwctl --passphrase ryangosling station wlan0 connect Bulo4ki
 
 ### Partition the disks
 
-The first partition: 512MB;
+The first partition: 512MB, type - 1 EFI System;
 The second partition: the rest of the space.
 
 ```bash
