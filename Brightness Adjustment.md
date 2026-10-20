@@ -26,3 +26,5 @@ Replace **strncpy** with **strscpy**:
 sudo dkms install ddcci/0.4.5
 ```
 
+### Create udev rule
+
