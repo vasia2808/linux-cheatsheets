@@ -32,7 +32,7 @@ mount --mkdir /dev/sda1 /mnt/boot
 
 ### Install essential packages
 
-**intel-ucode** for **Intel** CPU
+**intel-ucode** for **Intel** CPU[]()
 **amd-ucode** for **AMD** CPU
 
 ```bash
