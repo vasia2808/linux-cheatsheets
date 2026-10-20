@@ -81,6 +81,12 @@ echo arch > /etc/hostname
 systemctl enable NetworkManager
 ```
 
+### Root password
+
+```bash
+passwd
+```
+
 ### Boot loader
 
 
