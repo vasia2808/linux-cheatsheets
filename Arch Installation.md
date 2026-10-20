@@ -16,3 +16,28 @@ fdisk -l
 fdisk /dev/sda
 ```
 
+### Mount the file systems
+
+```
+mount /dev/sda2 /mnt
+mount --mkdir /dev/sda1 /mnt/boot
+```
+
+### Install essential packages
+
+```
+pacstrap -K /mnt base linux linux-firmware grub efibootmgr sudo networkmanager intel-ucode neovim
+```
+
+### Generate fstab
+
+```
+genfstab -U /mnt >> /mnt/etc/fstab
+```
+
+### Change root into the new system
+
+```
+arch-chroot -S /mnt
+```
+
