@@ -14,6 +14,12 @@ Open **/usr/src/ddcci-0.4.5/ddcci/ddcci.c**:
 sudo nvim /usr/src/ddcci-0.4.5/ddcci/ddcci.c
 ```
 
+Replace **strncpy** with **strscpy**:
+
+```vim
+:%s/strncpy/strscpy/g
+```
+
 ```bash
 sudo dkms install ddcci/0.4.5 -k 7.2.2-arch1-1
 ```
