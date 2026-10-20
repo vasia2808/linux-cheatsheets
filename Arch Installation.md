@@ -81,18 +81,29 @@ echo arch > /etc/hostname
 systemctl enable NetworkManager
 ```
 
+### Boot loader
+
+Set **--removable** flag if the installation is being performed on an external storage device.
+Set **GRUB_TIMEOUT=0** and **GRUB_DISABLE_BOOTNEXT=true** in **/etc/default/grub**.
+
+```bash
+grub-install --target=x86_64-efi --bootloader-id=GRUB --efi-directory=/boot --removable
+nvim /etc/default/grub
+grub-mkconfig -o /boot/grub/grub.cfg
+```
+
 ### Root password
 
 ```bash
 passwd
 ```
 
-### Boot loader
-
-
+### User configuration
 
 ```bash
-grub-install --target=x86_64-efi --bootloader-id=GRUB --efi-directory=/boot --removable
-nvim /etc/default/grub
-grub-mkconfig -o /boot/grub/grub.cfg
+EDITOR=nvim visudo
+
+useradd -m vasya
+passwd vasya
+usermod -aG wheel vasya
 ```
