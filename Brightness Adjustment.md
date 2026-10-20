@@ -40,4 +40,4 @@ Find **I2C bus** (for example: /dev/i2c-4):
 ddcutil detect
 ```
 
-Find 
+Find
