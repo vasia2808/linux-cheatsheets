@@ -15,14 +15,25 @@ psql -d dbname
 exit
 ```
 
-Uncomment and set **listen_addresses = '*'**
+Uncomment and set**listen_addresses = '*'**
 
 ```bash
 sudo nvim /var/lib/postgres/data/postgresql.conf
 ```
 
-
+Append: **host    dbname            user           192.168.122.0/24        scram-sha-256**
 
 ```bash
 sudo nvim /var/lib/postgres/data/pg_hba.conf
+```
+
+# pgAdmin 4
+
+```bash
+sudo mkdir /var/lib/pgadmin
+sudo mkdir /var/log/pgadmin
+sudo chown $USER /var/lib/pgadmin
+sudo chown $USER /var/log/pgadmin
+(venv) pip install pgadmin4
+(venv) pdadmin4
 ```
