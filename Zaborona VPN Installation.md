@@ -1,4 +1,4 @@
-### Zaborona VPN Installation
+# Zaborona VPN Installation
 
 ```bash
 sudo pacman -S networkmanager-openvpn
