@@ -29,3 +29,9 @@ setup_vkd3d_proton install
 
 ### Optional libraries
 
+For specific games
+
+```bash
+winetricks d3dx9
+winetricks vcrun2005 vcrun2008 vcrun2010 vcrun2012 vcrun2013 vcrun2022
+```
