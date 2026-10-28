@@ -3,7 +3,7 @@
 ### Connect to the internet
 
 ```bash
-iwctl --passphrase ryangosling station wlan0 connect Bulo4ki
+iwctl --passphrase password station wlan0 connect ssid
 ```
 
 ### Partition the disks
